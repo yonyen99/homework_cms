@@ -4,7 +4,7 @@ author url :http://localhost/Wordpressweba/Wpweba
 version:1.0
 */
 header{
-    background: #000;
+    background: black;
 }
 ul{
   list-style:none;
@@ -21,4 +21,22 @@ li a{
   color:white;
   padding:15px 15px;
 }
+li a:hover{
+  background-color: black;
+  color: white;
+}
 
+.page-footer{
+  background: rgb(41, 231, 248);
+}
+.footer {
+  padding: 30px;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+.seach{
+  margin-left: 600px;
+  margin-top: -30px;
+}

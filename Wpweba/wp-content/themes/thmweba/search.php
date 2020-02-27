@@ -24,33 +24,13 @@
                     <br>
                     The Date:<?php the_time('F j, Y'); ?>&nbsp Post by <?php the_author(); ?>
 
-                    <!-- category  -->
-                    <?php $caters = get_the_category();
-                            $output = "";
-                            if ($caters) {
-                                foreach ($caters as $cater) {
-                                    $output = '<a href = "' . get_category_link($cater->term_id) . '">' . $cater->cat_name . '</a>';
-                                }
-                            }
-                            echo $output;
-                            ?>
 
-                    <div class="content">
-                        <!-- excerpt -->
-                        <?php the_content(); ?>
 
-                        <!-- set feature images -->
-                        <?php if (has_post_thumbnail()) : ?>
-                            <?php the_post_thumbnail(); ?>
 
-                        <?php else : echo "not  found"; ?>
-                        <?php endif; ?>
-                    </div>
                     <br>
-                    <p>
-                        <a href="<?php the_permalink(); ?>" class="btn btn-lg btn-primary" type="button">
-                            read more ...
-                        </a>
+                    <a href="<?php the_permalink(); ?>" class="btn btn-lg btn-primary" type="button">
+                        read more ...
+                    </a>
                     </p>
                     <!-- <button type="button" class="btn btn-primary">Primary</button> -->
 
@@ -62,6 +42,9 @@
                 <?php get_footer();
                 ?>
             </div>
+
+
+
 
             <div class="col-1"></div>
         </div>
